@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost;databaseName=RecipeManager
+    url: jdbc:sqlserver://db;databaseName=RecipeManager
     username: sa
-    password: Stone@2019!
+    password: recipe@2021!
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
   jpa:

@@ -61,7 +61,6 @@ public class RecipeManagerControllerTest {
         ResultActions resultActions = mockMvc.perform(get("/api/v1/recipes")
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk())
-                .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
 
         MvcResult result = resultActions.andReturn();
@@ -149,7 +148,6 @@ public class RecipeManagerControllerTest {
         ResultActions resultActions = mockMvc.perform(get("/api/v1/recipes/1")
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk())
-                .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
 
         MvcResult result = resultActions.andReturn();

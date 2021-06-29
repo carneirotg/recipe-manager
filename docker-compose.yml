@@ -1,11 +1,10 @@
-version: '3.8'
+version: '3.9'
 
 services:
-  database:
-    image: "mcr.microsoft.com/mssql/server:2019-latest"
-    container_name: recipe_manager
+  db:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
     environment:
-      SA_PASSWORD: "sa"
+      SA_PASSWORD: "recipe@2021!"
       ACCEPT_EULA: "Y"
     ports:
       - 1433:1433
@@ -16,6 +15,4 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8080:8080
-    depends_on:
-      - database
+      - 8080:8080 
