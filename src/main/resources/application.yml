@@ -8,5 +8,4 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      dialect: org.hibernate.dialect.SQLServer2016Dialect
-      ddl-auto: validate
+      ddl-sequence: validate
