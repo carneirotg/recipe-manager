@@ -1,5 +1,6 @@
 package com.assessment.recipemanager.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,6 +21,8 @@ public class Recipe{
     private Long id;
 
     @Column(name = "created_at")
+    @JsonProperty("created_at")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime createdAt = LocalDateTime.now();;
 
     @Column(name = "is_vegetarian")
