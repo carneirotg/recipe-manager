@@ -1,12 +1,12 @@
-#Recipe Manager
+# Recipe Manager
 A system designed to keep track of recipes, exposing endpoints to Create, Update, Read and Delete recipes from a database.
 
-##Requirements
-    - Maven
-    - Java 16
-    - Docker
+## Requirements
+- Maven
+- Java 16
+- Docker
 
-##Build
+## Build
 
 First, let's put the databse up and running:
 
