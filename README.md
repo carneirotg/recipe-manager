@@ -10,7 +10,7 @@ A system designed to keep track of recipes, exposing endpoints to Create, Update
 
 First, let's put the databse up and running:
 
-`docker-compose up -d dabatase`
+`docker-compose up -d db`
 
 Then run flyway migration to create the database and the Recipe table:
 
