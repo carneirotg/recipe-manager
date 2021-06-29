@@ -22,6 +22,6 @@ Build the project itself:
 
 And finally run it:
 
-`docker-compose up -d api`
+`docker-compose up api`
 
 The API Documentation can be found [here](https://recipe-manager.readme.io/reference/create-recipe).
